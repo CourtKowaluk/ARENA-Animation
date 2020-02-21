@@ -1,9 +1,7 @@
-# ARENA-Animation
-ARENA Animation
-
+# ARENA Animation
 This details the process of creating a simple animated 3D model in Blender, and then animating it on a click event in the CONIX ARENA. It uses MQTT as a primary way of initalizing and communicating with the ARENA.
 
-#Getting Started
+# Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 For this, Blender is used, as it is free and versatile. However, any other 3D modeling & animation software will suffice, as long as the file is exported to a *.glb or *.gltf format. 
@@ -11,11 +9,11 @@ For this, Blender is used, as it is free and versatile. However, any other 3D mo
 Blender can be downloaded here: 
 https://www.blender.org/download/
 
-Prerequisites
+# Prerequisites
 What things you need to install the software and how to install them
 
-Give examples
-Installing
+# Give examples
+# Installing
 A step by step series of examples that tell you how to get a development env running
 
 Say what the step will be
