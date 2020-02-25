@@ -25,6 +25,7 @@ Use the Move tool to move the sphere from the center. Move the sphere to the sta
 In the bottom right Context menu, there is a line of tabs down the side. To change the color of the rendered object, you can edit the Base Color and Subsurface Color in the Material tab. ![tutorial_03](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_03.png) This will not show up in your Blender window, however it will be in the complete render when it's exported. To change how it appears in the scene, scroll down to Viewport Display in the Material tab. ![tutorial_04](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_04.png)
 
 To change the color of a sphere or new mesh created, there are a few additional steps. If you select the sphere in the Scene Collection menu and go to the Material tab of the Context menu, you will notice there are no presets or settings to change, unlike the already-generated cube. Create a new material, name it whatever you want, and you can change the colors, materials, and display. 
+
 ![tutorial_07](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_07.png) ![tutorial_08](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_08.png)
 
 ### Starting Animation
@@ -41,3 +42,15 @@ In the animation window at the bottom of the timeline, click on the numbers to s
 Switch back to the layout tab along the top. Here you can play back the animation, as well as adjust how long the animation is. I changed it from 250 to 100 frames, as I do not have 250 frames of content, and there would just be a long pause at the end of the animation.
 
 ![tutorial_13](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_13.png) 
+
+### Saving the Animation
+To save the animation, go to the menu at the top left of the window. Select File > Export > glTF 2.0 (.glb/.gltf). 
+
+![tutorial_14](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_14.png) 
+
+In the bottom left menu, select how you want to export the file. \*.glb, \*.gltf, and separate \*.gltf are valid options. If using the separate \*.gltf, make sure to upload the entire folder later. In this case, I'm exporting it as a single \*.gltf.
+
+![tutorial_15](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_15.png) 
+
+### Testing the Animation
+[This website](https://gltf-viewer.donmccurdy.com/) will display animated glTF files. 
