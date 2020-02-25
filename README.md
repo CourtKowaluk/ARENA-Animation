@@ -15,6 +15,8 @@ Your screen should open to the Layout tab, with a grey cube in the center of the
 
 ### Creating New Models
 For this tutorial, we will be using two shapes. In this case, I will be using a cube and a sphere. At the top of the screen to the left, click Add > Mesh > UV Sphere. ![tutorial_05](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_05.png) This will add a sphere to the origin of the scene. 
+
+
 ![tutorial_06](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_06.png) 
 
 Use the Move tool to move the sphere from the center. Move the sphere to the starting position of your choice. 
