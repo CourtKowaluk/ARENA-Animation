@@ -29,3 +29,15 @@ To change the color of a sphere or new mesh created, there are a few additional 
 
 ### Starting Animation
 At the top of the window, change from the Layout tab to the Animation tab. This window will look different, with a preview on the left, scene in the middle, and a timeline at the bottom. Right click on the cube, select 'Insert Keyframe', and select 'Location'. ![tutorial_09](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_09.png) In Blender, a keyframe is a specific frame in the timeline that contains the attributes of models, such as their location, rotation, or size. You can read more about Blender keyframes [here.](https://docs.blender.org/manual/en/latest/animation/keyframes/introduction.html)
+
+Add a Location Keyframe to the sphere, as well. This tutorial will only cover the basics of animating location movements, however rotation and scale work similarly. 
+
+![tutorial_10](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_10.png)
+
+In the animation window at the bottom of the timeline, click on the numbers to switch frames. When moving objects, use the Move tool, or change the coordinates in the Context menu. Select the diamond next to each location coordinate in the Context menu in each frame that moves to save the change. Each model moves separately, but they do not have to move every frame. For simple animations, moving something every 5-10 frames is fine. The movements I set are at random, and they loop back to their original position. 
+
+![tutorial_12](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_12.png)
+
+Switch back to the layout tab along the top. Here you can play back the animation, as well as adjust how long the animation is. I changed it from 250 to 100 frames, as I do not have 250 frames of content, and there would just be a long pause at the end of the animation.
+
+![tutorial_13](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_13.png)
