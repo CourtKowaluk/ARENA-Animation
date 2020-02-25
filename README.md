@@ -9,7 +9,8 @@ For this, Blender is used, as it is free and versatile. However, any other 3D mo
 Install Blender according to the instructions for your OS. I'm using Blender 2.80 for Ubuntu 18.04.4.
 
 ## Starting Blender
-When you start Blender, choose to open a General new file. [tutorial_01]
+When you start Blender, choose to open a General new file. ![tutorial_01](https://github.com/CourtKowaluk/ARENA-Animation/tree/master/images/tutorial_01.png)
+
 Your screen should open to the Layout tab, with a grey cube in the center of the scene. You'll have a camera, cube, and light in the top right Scene Collection window. [tutorial_02]
 
 ### Creating New Models
