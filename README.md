@@ -19,7 +19,7 @@ For this tutorial, we will be using two shapes. In this case, I will be using a 
 
 ![tutorial_06](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_06.png) 
 
-Use the Move tool to move the sphere from the center. Move the sphere to the starting position of your choice. 
+Use the Move tool to move the sphere from the center to the starting position of your choice. 
 
 ### Changing colors
 In the bottom right Context menu, there is a line of tabs down the side. To change the color of the rendered object, you can edit the Base Color and Subsurface Color in the Material tab. ![tutorial_03](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_03.png) This will not show up in your Blender window, however it will be in the complete render when it's exported. To change how it appears in the scene, scroll down to Viewport Display in the Material tab. ![tutorial_04](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_04.png)
