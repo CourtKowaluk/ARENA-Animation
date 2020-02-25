@@ -40,4 +40,4 @@ In the animation window at the bottom of the timeline, click on the numbers to s
 
 Switch back to the layout tab along the top. Here you can play back the animation, as well as adjust how long the animation is. I changed it from 250 to 100 frames, as I do not have 250 frames of content, and there would just be a long pause at the end of the animation.
 
-![tutorial_13](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_13.png)
+![tutorial_13](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_13.png) 
