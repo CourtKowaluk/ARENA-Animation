@@ -6,7 +6,7 @@ For this, Blender is used, as it is free and versatile. However, any other 3D mo
 
 [Blender can be downloaded here.](https://www.blender.org/download/)
 
-Install Blender according to the instructions for your OS. I'm using Blender 2.80 for Ubuntu 18.04.4.
+Install Blender according to the instructions for your OS. I'm using Blender 2.80 on Ubuntu 18.04.4 for this tutorial.
 
 ## Starting Blender
 When you open Blender, choose a General new file. ![tutorial_01](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_01.png)
