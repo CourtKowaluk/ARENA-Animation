@@ -53,4 +53,4 @@ In the bottom left menu, select how you want to export the file. \*.glb, \*.gltf
 ![tutorial_15](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_15.png) 
 
 ### Testing the Animation
-[This website](https://gltf-viewer.donmccurdy.com/) will display animated glTF files. 
+[This website](https://gltf-viewer.donmccurdy.com/) will display animated glTF files. You can upload your exported file here to check if everything worked correctly.
