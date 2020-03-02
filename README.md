@@ -54,3 +54,6 @@ In the bottom left menu, select how you want to export the file. \*.glb, \*.gltf
 
 ### Testing the Animation
 [This website](https://gltf-viewer.donmccurdy.com/) will display animated glTF files. You can upload your exported file here to check if everything worked correctly.
+
+## Uploading the Animation File
+Upload your file to github, and then view the raw file. This link is what will be used to upload the model to the ARENA.
