@@ -58,8 +58,29 @@ In the bottom left menu, select how you want to export the file. \*.glb, \*.gltf
 ## Adding the file to the ARENA
 There are a few ways to add objects to the ARENA using MQTT. You can manually type the MQTT message using [Mosquitto](https://mosquitto.org/), a broker for MQTT. In addition, you can use [this builder tool](https://xr.andrew.cmu.edu/build.html), which will generate and send the message to the ARENA. In addition, you can create objects in scripts that connect to the MQTT server.
 
+To animate an object, the model has to be persisted in the ARENA already, however the method of creation does not matter. To set the animation, however, a message needs to be sent through Mosquitto. Make sure to install Mosquitto for a terminal.
+
 ### Uploading the Animation File
 To begin with, upload your file to github, and then view the raw file. This link is what will be used to upload the model to the ARENA.
 
 ### Using the Builder Tool
+[The builder tool](https://xr.andrew.cmu.edu/build.html) allows you to send objects into the ARENA relatively easily. 
+- The `object_id` is what the model will be called in the scene. 
+- For `object_type`, select 'gltf-model'. 
+- The `GLTF model URL` is the raw github URL.
+- The `scene` is whatever scene you choose place in.
+- The position/rotation/scale are up to your discretion. 
+- The `color` doesn't matter for GLTF models.
+- Check `persist` to keep the model. 
+Select 'Create' to send the message to the scene. You can go to the scene URL to check if the object is there.
+
+### Using Mosquitto to Add the Model
+Make sure you have Mosquitto working on your computer. This is the general message format you can send to the server:
+
+```mosquitto_pub -h oz.andrew.cmu.edu -t realm/s/SceneName/gltf-model_test -m '{"object_id" : "gltf-model_test", "action": "create", "data": {"object_type": "gltf-model", "url": "https://raw.githubusercontent.com/YourUsername/YourRepo/master/animation_test.gltf", "position": {"x": 0, "y": 0, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}' ```
+
+This will send your model to the ARENA scene.
+
+### Animating the Model
+
 
