@@ -64,7 +64,7 @@ To animate an object, the model has to be persisted in the ARENA already, howeve
 To begin with, upload your file to github, and then view the raw file. This link is what will be used to upload the model to the ARENA.
 
 ### Using the Builder Tool
-[The builder tool](https://xr.andrew.cmu.edu/build.html) allows you to send objects into the ARENA relatively easily. 
+[The builder tool](https://xr.andrew.cmu.edu/build.html) allows you to send objects into the ARENA relatively easily. (This will not work for arena-west1.conix.io, the host for the UCLA workshop).
 - The `object_id` is what the model will be called in the scene. 
 - For `object_type`, select 'gltf-model'. 
 - The `GLTF model URL` is the raw github URL.
@@ -75,6 +75,9 @@ To begin with, upload your file to github, and then view the raw file. This link
 Select 'Create' to send the message to the scene. You can go to the scene URL to check if the object is there.
 
 ### Using Mosquitto to Add the Model
+
+The host for the messages in the examples has `oz.andrew.cmu.edu` as the host. However, in UCLA (as of 3/4/20), `-h arena-west1.conix.io -p 3003` should be used. There is no need to specify the port for `oz.andrew.cmu.edu`, but make sure to include it for `arena-west1.conix.io`.
+
 Make sure you have Mosquitto working on your computer. This is the general message format you can send to the server:
 
 ```mosquitto_pub -h oz.andrew.cmu.edu -t realm/s/SceneName/gltf-model_test -m '{"object_id" : "gltf-model_test", "action": "create", "persist":true, "data": {"object_type": "gltf-model", "url": "https://raw.githubusercontent.com/YourUsername/YourRepo/master/animation_test.gltf", "position": {"x": 0, "y": 0, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}' ```
