@@ -64,10 +64,11 @@ To animate an object, the model has to be persisted in the ARENA already, howeve
 To begin with, upload your file to github, and then view the raw file. This link is what will be used to upload the model to the ARENA.
 
 ### Using the Builder Tool
-[The builder tool](https://xr.andrew.cmu.edu/build.html) allows you to send objects into the ARENA relatively easily. (This will not work for arena-west1.conix.io, the host for the UCLA workshop).
+[The builder tool](https://xr.andrew.cmu.edu/build.html) allows you to send objects into the ARENA relatively easily.
 - The `object_id` is what the model will be called in the scene. 
 - For `object_type`, select 'gltf-model'. 
 - The `GLTF model URL` is the raw github URL.
+- The `MQTT server` will be `oz.andrew.cmu.edu` by default, but `arena-west1.conx.io` is the server for arena-west1, 
 - The `scene` is whatever scene you choose place in.
 - The position/rotation/scale are up to your discretion. 
 - The `color` doesn't matter for GLTF models.
