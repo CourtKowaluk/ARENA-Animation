@@ -75,7 +75,7 @@ To begin with, upload your file to github, and then view the raw file. This link
 - Check `persist` to keep the model. Otherwise, it will disappear when the page is reloaded.
 Select 'Create' to send the message to the scene. You can go to the scene URL to check if the object is there.
 
-![tutorial_upload](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tut_upload.png)
+![tutorial_upload](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tut_upload.PNG)
 
 ### Using Mosquitto to Add the Model
 
@@ -90,6 +90,8 @@ This will send your model to the ARENA scene.
 ### Animating the Model
 
 To animate the model, you need to know the name of the animation clip. In Blender, it's related to the movement of the objects. To find the name, open up the GLTF model in a text editor of your choice, or view the RAW in github. Under "Animations", there will be a field called "name", which has the name of the animation listed after it. It might be something like "CubeAction" from Blender, or it may be something like "Clip001", which is common from downloaded GLTF models.
+
+![tut_animation](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_an.png)
 
 For the animation, you will use a similar message to message creating the object in the scene. The scene name *must* be different than the name of the model from the previous message, however, or it will overwrite the model. If the scene was `realm/s/SceneName/gltf-model_test`, then the animation topic could be `realm/s/SceneName/gltf-model_testMove`. The `object_id` is the same. 
 
