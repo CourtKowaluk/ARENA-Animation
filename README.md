@@ -71,16 +71,25 @@ To begin with, upload your file to github, and then view the raw file. This link
 - The `scene` is whatever scene you choose place in.
 - The position/rotation/scale are up to your discretion. 
 - The `color` doesn't matter for GLTF models.
-- Check `persist` to keep the model. 
+- Check `persist` to keep the model. Otherwise, it will disappear when the page is reloaded.
 Select 'Create' to send the message to the scene. You can go to the scene URL to check if the object is there.
 
 ### Using Mosquitto to Add the Model
 Make sure you have Mosquitto working on your computer. This is the general message format you can send to the server:
 
-```mosquitto_pub -h oz.andrew.cmu.edu -t realm/s/SceneName/gltf-model_test -m '{"object_id" : "gltf-model_test", "action": "create", "data": {"object_type": "gltf-model", "url": "https://raw.githubusercontent.com/YourUsername/YourRepo/master/animation_test.gltf", "position": {"x": 0, "y": 0, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}' ```
+```mosquitto_pub -h oz.andrew.cmu.edu -t realm/s/SceneName/gltf-model_test -m '{"object_id" : "gltf-model_test", "action": "create", "persist":true, "data": {"object_type": "gltf-model", "url": "https://raw.githubusercontent.com/YourUsername/YourRepo/master/animation_test.gltf", "position": {"x": 0, "y": 0, "z": -2}, "rotation": {"x": 0, "y": 0, "z": 0, "w": 1}, "scale": {"x": 1, "y": 1, "z": 1}}}' ```
 
 This will send your model to the ARENA scene.
 
 ### Animating the Model
 
+To animate the model, you need to know the name of the animation clip. In Blender, it's related to the movement of the objects. To find the name, open up the GLTF model in a text editor of your choice, or view the RAW in github. Under "Animations", there will be a field called "name", which has the name of the animation listed after it. It might be something like "CubeAction" from Blender, or it may be something like "Clip001", which is common from downloaded GLTF models.
+
+For the animation, you will use a similar message to message creating the object in the scene. The scene name *must* be different than the name of the model from the previous message, however, or it will overwrite the model. If the scene was `realm/s/SceneName/gltf-model_test`, then the animation topic could be `realm/s/SceneName/gltf-model_testMove`. The `object_id` is the same. 
+
+The message sent in Mosquitto will be something similar to this:
+
+```mosquitto_pub -h oz.andrew.cmu.edu -t realm/s/SceneName/gltf-model_testMove -m '{"object_id": "gltf-model_test", "action": "update", "type": "object", "persist":true, "data": {"animation-mixer": {"clip": "CubeAction"}}}' ```
+
+This will loop the animation for your model in the ARENA.
 
