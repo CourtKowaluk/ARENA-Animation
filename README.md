@@ -75,6 +75,8 @@ To begin with, upload your file to github, and then view the raw file. This link
 - Check `persist` to keep the model. Otherwise, it will disappear when the page is reloaded.
 Select 'Create' to send the message to the scene. You can go to the scene URL to check if the object is there.
 
+![tutorial_upload](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tut_upload.png)
+
 ### Using Mosquitto to Add the Model
 
 The host for the messages in the examples has `oz.andrew.cmu.edu` as the host. However, in UCLA (as of 3/4/20), `-h arena-west1.conix.io -p 3003` should be used. There is no need to specify the port for `oz.andrew.cmu.edu`, but make sure to include it for `arena-west1.conix.io`.
