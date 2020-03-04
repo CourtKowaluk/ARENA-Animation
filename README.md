@@ -70,7 +70,7 @@ To begin with, upload your file to github, and then view the raw file. This link
 - The `object_id` is what the model will be called in the scene. 
 - For `object_type`, select 'gltf-model'. 
 - The `GLTF model URL` is the raw github URL.
-- The `MQTT server` will be `oz.andrew.cmu.edu` by default, but `arena-west1.conx.io` is the server for arena-west1, 
+- The `MQTT server` will be `oz.andrew.cmu.edu` by default, but `arena-west1.conx.io` is the server for arena-west1. 
 - The `scene` is whatever scene you choose place in.
 - The position/rotation/scale are up to your discretion. 
 - The `color` doesn't matter for GLTF models.
