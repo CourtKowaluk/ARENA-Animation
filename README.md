@@ -60,7 +60,7 @@ In the bottom left menu, select how you want to export the file. \*.glb, \*.gltf
 ## Adding the file to the ARENA
 There are a few ways to add objects to the ARENA using MQTT. You can manually type the MQTT message using [Mosquitto](https://mosquitto.org/), a broker for MQTT. In addition, you can use [this builder tool](https://xr.andrew.cmu.edu/build.html), which will generate and send the message to the ARENA. In addition, you can create objects in scripts that connect to the MQTT server.
 
-To animate an object, the model has to be persisted in the ARENA already, however the method of creation does not matter. To set the animation, however, a message needs to be sent through Mosquitto. Make sure to install Mosquitto for a terminal.
+To animate an object, the model has to be persisted in the ARENA already, however the method of creation does not matter. To set the animation, a message needs to be sent through MQTT. Make sure to install Mosquitto for a terminal.
 
 ### Uploading the Animation File
 To begin with, upload your file to github, and then view the raw file. This link is what will be used to upload the model to the ARENA.
@@ -91,7 +91,7 @@ This will send your model to the ARENA scene.
 
 ### Animating the Model
 
-To animate the model, you need to know the name of the animation clip. In Blender, it's related to the movement of the objects. To find the name, open up the GLTF model in a text editor of your choice, or view the RAW in github. Under "Animations", there will be a field called "name", which has the name of the animation listed after it. It might be something like "CubeAction" from Blender, or it may be something like "Clip001", which is common from downloaded GLTF models.
+To animate the model, you need to know the name of the animation clip. In Blender, it's related to the movement of the objects. To find the name, open up the GLTF model in a text editor of your choice, or view the raw in github. Under "Animations", there will be a field called "name", which has the name of the animation listed after it. It might be something like "CubeAction" from Blender, or it may be something like "Clip001", which is common from downloaded GLTF models.
 
 ![tut_animation](https://raw.githubusercontent.com/CourtKowaluk/ARENA-Animation/master/images/tutorial_an.png)
 
